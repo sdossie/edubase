@@ -2,12 +2,14 @@
 
 <table>
   <tr>
+    <th>Course Number</th>
     <th>Name</th>
     <th>Description</th>
   </tr>
 
 <% @courses.each do |course| %>
   <tr>
+    <td><%=h course.course_number %></td>
     <td><%=h course.name %></td>
     <td><%=h course.description %></td>
     <td><%= link_to 'Show', course %></td>

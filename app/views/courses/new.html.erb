@@ -3,7 +3,11 @@
 <% form_for(@course) do |f| %>
   <%= f.error_messages %>
 
-  <p>
+<p>
+    <%= f.label :course_number %><br />
+    <%= f.text_field :course_number %>
+  </p>
+<p>
     <%= f.label :name %><br />
     <%= f.text_field :name %>
   </p>
