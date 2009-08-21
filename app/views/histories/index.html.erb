@@ -1,0 +1,22 @@
+<h1>Listing histories</h1>
+
+<table>
+  <tr>
+    <th>Date started</th>
+    <th>Date completed</th>
+  </tr>
+
+<% @histories.each do |history| %>
+  <tr>
+    <td><%=h history.date_started %></td>
+    <td><%=h history.date_completed %></td>
+    <td><%= link_to 'Show', history %></td>
+    <td><%= link_to 'Edit', edit_history_path(history) %></td>
+    <td><%= link_to 'Destroy', history, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New history', new_history_path %>

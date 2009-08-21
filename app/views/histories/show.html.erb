@@ -1,0 +1,13 @@
+<p>
+  <b>Date started:</b>
+  <%=h @history.date_started %>
+</p>
+
+<p>
+  <b>Date completed:</b>
+  <%=h @history.date_completed %>
+</p>
+
+
+<%= link_to 'Edit', edit_history_path(@history) %> |
+<%= link_to 'Back', histories_path %>
