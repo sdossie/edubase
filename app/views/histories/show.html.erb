@@ -8,6 +8,11 @@
   <%=h @history.date_completed %>
 </p>
 
+<p>
+  <b>Result:</b>
+  <%=h @history.result %>
+</p>
+
 
 <%= link_to 'Edit', edit_history_path(@history) %> |
 <%= link_to 'Back', histories_path %>

@@ -4,12 +4,15 @@
   <tr>
     <th>Date started</th>
     <th>Date completed</th>
+    <th>Result</th>
+
   </tr>
 
 <% @histories.each do |history| %>
   <tr>
     <td><%=h history.date_started %></td>
     <td><%=h history.date_completed %></td>
+     <td><%=h history.result %></td>
     <td><%= link_to 'Show', history %></td>
     <td><%= link_to 'Edit', edit_history_path(history) %></td>
     <td><%= link_to 'Destroy', history, :confirm => 'Are you sure?', :method => :delete %></td>
