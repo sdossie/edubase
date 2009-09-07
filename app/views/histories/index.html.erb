@@ -2,6 +2,7 @@
 <p>A listing of course and the date complated and the result</p>
 <table>
   <tr>
+    <th>Course Id</th>
     <th>Date started</th>
     <th>Date completed</th>
     <th>Result</th>
@@ -10,6 +11,7 @@
 
 <% @histories.each do |history| %>
   <tr>
+    <td><%=h history.course_id %></td
     <td><%=h history.date_started %></td>
     <td><%=h history.date_completed %></td>
      <td><%=h history.result %></td>

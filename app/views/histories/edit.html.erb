@@ -3,7 +3,11 @@
 <% form_for(@history) do |f| %>
   <%= f.error_messages %>
 
-  <p>
+<p>
+    <%= f.label :course_id %><br />
+    <%= f.text_field :course_id %>
+  </p>
+<p>
     <%= f.label :date_started %><br />
     <%= f.date_select :date_started %>
   </p>
